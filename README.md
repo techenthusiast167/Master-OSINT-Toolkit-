@@ -33,7 +33,7 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 - Extract metadata from documents and images
 
-- Perform Google Dorking queries for sensitive info discovery
+- Perform Google Dorking queries for sensitive information discovery
 
 - Retrieve historical snapshots of URLs via the Wayback Machine
 
@@ -41,8 +41,7 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 - Scrape website metadata and extract emails, names, locations
 
-- Validate phone numbers, retrieve country, carrier, and type info
-Search OSINT dorks for in-depth investigations
+- Validate phone numbers, retrieve country, carrier, and type information; search OSINT dorks for in-depth investigations on phone number 
 
 - Make a quick investigation by verifying image authenticity and valuable information 
 
@@ -107,7 +106,7 @@ Enter the number of the module you want to perform, and follow the prompts for i
 
 The tool may display results directly or open relevant web pages for further exploration.
 
-Select option 10 at any time to exit gracefully.
+Select option 12 at any time to exit gracefully.
 
 # Module Descriptions
 
@@ -140,12 +139,12 @@ Select option 10 at any time to exit gracefully.
 
 **Some modules require API keys**:
 
-HaveIBeenPwned API (for Email breach checks)
+HaveIBeenPwned API (for Email breach checks: https://haveibeenpwned.com/api/v3 
 
-Register at HaveIBeenPwned API and replace YOUR_API_KEY placeholder in the script.
+Register at HaveIBeenPwned API and replace YOUR_API_KEY placeholder rightly where is required in the script.
 
 AbuseIPDB API (for IP blacklist checks)
-Register at AbuseIPDB and replace the API key placeholder.
+Register at AbuseIPDB and replace the API key placeholder rightly where needed in the script: https://www.abuseipdb.com 
 
 Security Note: Never hardcode API keys in public repositories. Use environment variables or config files instead.
 
