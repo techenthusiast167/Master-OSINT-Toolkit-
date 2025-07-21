@@ -165,4 +165,4 @@ Contact & Support
 
 Email: preciousvincentct@gmail.com
 
-LinkedIn: tech-enthusiast
+LinkedIn: http://linkedin.com/in/tech-enthusiast-669279263
