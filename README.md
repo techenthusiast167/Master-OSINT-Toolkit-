@@ -29,7 +29,7 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 - Check if email addresses have been breached using HaveIBeenPwned API
 
-- Perform domain WHOIS lookups including registrar and domain age info
+- Perform domain WHOIS lookups including registrar, domain age information and subdomain enumeration 
 
 - Extract metadata from documents and images
 
