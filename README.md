@@ -134,7 +134,7 @@ Select option 12 at any time to exit gracefully.
 
 11. Reverse Image Search: Make a quick investigation of an image authenticity 
 
-12. Exit the tool
+13. Exit the tool
 
 
 # API Keys Setup
