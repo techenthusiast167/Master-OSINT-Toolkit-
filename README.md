@@ -121,7 +121,7 @@ For the **Website Metadata and Entity Scraper**, create a file named **urls.txt*
 
 - Select a module by entering its associated number when prompted.
   
-- Follow any on-screen instructions to input required data (e.g., image path, username, email address, domain, phone number, etc).
+- Follow any on-screen instructions to input required data (e.g., **image path, username, email address, domain, phone number**, etc).
 
 
 
