@@ -139,7 +139,7 @@ For the **Website Metadata and Entity Scraper**, create a file named **urls.txt*
    
 5. **Domain Investigation**: Retrieve WHOIS info, DNS records, and subdomain enumeration.
    
-6. **Metadata Extraction**: Extract EXIF metadata and file system info from files.
+6. **Metadata Extraction**: Extract EXIF metadata and file system information from files.
    
 7. **Google Dorking**: Perform advanced Google searches using powerful operators.
    
