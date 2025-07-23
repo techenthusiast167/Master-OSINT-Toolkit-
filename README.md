@@ -127,21 +127,21 @@ For the **Website Metadata and Entity Scraper**, create a file named **urls.txt*
 
 You will see a menu with 14 OSINT modules plus an exit option. Enter the number of the module you want to run and follow the prompts.
 
-For example:
+**For example**:
 
-    Enter a username to generate social media profile URLs.
+- Enter a username to generate social media profile URLs.
 
-    Enter an email to check breaches or verify validity.
+- Enter an email to check breaches or verify validity.
 
-    Enter domain names for WHOIS and DNS lookups.
+- Enter domain names for WHOIS and DNS lookups.
 
-    Provide image file paths for EXIF geolocation.
+- Provide image file paths for EXIF geolocation.
 
-    Enter IP addresses for geolocation and blacklist checking.
+- Enter IP addresses for geolocation and blacklist checking.
 
-    Use urls.txt file (one URL per line) in the folder for website metadata scraping.
+- Use **urls.txt** file (one URL per line) in the folder for website metadata scraping.
 
-Results will print in the console or save to files depending on the module (e.g., metadata_output.json for website scraping).
+- Results will print in the console or save to files depending on the module (e.g., metadata_output.json for website scraping).
 
 
 # Module Descriptions
@@ -182,14 +182,15 @@ Results will print in the console or save to files depending on the module (e.g.
 
 **Some modules require API keys for full functionality**:
 
-    HaveIBeenPwned API key: needed for email breach checks.
-    Sign up at https://haveibeenpwned.com/API/Key and set your key in the script.
+- **HaveIBeenPwned API key**: needed for email breach checks.
+- Sign up at https://haveibeenpwned.com/API/Key and set your key in the script.
 
-    Hunter.io API key: needed for email verification.
-    Register at https://hunter.io and update the key in the script.
+ - **Hunter.io API key**: needed for email verification.
+ - Register at https://hunter.io and update the key in the script.
 
-    AbuseIPDB API key: for IP blacklist checks.
-    Register at https://www.abuseipdb.com/api and update accordingly.
+- **AbuseIPDB API key**: for IP blacklist checks.
+- Register at https://www.abuseipdb.com/api and update accordingly.
+- 
 
 Update the placeholder API key variables in master_osint.py with your keys to unlock full features.
 
