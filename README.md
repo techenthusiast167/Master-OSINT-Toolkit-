@@ -1,6 +1,6 @@
-MASTER OSINT - Beginner Friendly Open Source Intelligence Toolkit
+MASTER OSINT - An Advanced Beginner Friendly Open Source Intelligence Toolkit
 
-Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for open source intelligence investigations. The tool supports multiple investigative methods including image geolocation, social media profiling, email breach checks, domain lookup, metadata extraction, Google dorking, Wayback Machine querying, IP geolocation with blacklist checks, reverse image search, and phone number validation.
+Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for open source intelligence investigations. The tool supports multiple investigative methods including image geolocation, social media profiling, email breach and verification checkup, domain lookup, metadata extraction, Google dorking, Wayback Machine querying, IP geolocation with blacklist checks, reverse image search, geospatial Intelligence and phone number validation.
 
 
 
@@ -26,29 +26,33 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 # Features
 
-- Extract GPS coordinates from image EXIF data
 
-- Generate social media profile URLs based on username
 
-- Check if email addresses have been breached using HaveIBeenPwned API
+- Extract GPS coordinates from images EXIF data.
 
-- Verify the accuracy of email addresses and provide relevant information about them
+- Investigate social media presence across 30+ platforms by username.
 
-- Perform domain WHOIS lookups including registrar, domain age information and subdomain enumeration 
+- Detect email breaches and dig through public pastes.
 
-- Extract metadata from documents and images
+- Verify email validity using Hunter.io, ReverseContact.com, and Epieos.
 
-- Perform Google Dorking queries for sensitive information discovery
+- Perform WHOIS and DNS lookups, enumerate subdomains via crt.sh.
 
-- Retrieve historical snapshots of URLs via the Wayback Machine
+- Extract metadata from images/documents.
 
-- Geolocate IP addresses and check blacklists (AbuseIPDB)
+- Utilize Google advanced search operators (Google Dorking).
 
-- Scrape website metadata and extract emails, names, locations
+- Access archived website snapshots via Wayback Machine.
 
-- Validate phone numbers, retrieve country, carrier, and type information; search OSINT dorks for in-depth investigations on phone number 
+- Locate IP geolocation and retrieve abuse reports with AbuseIPDB.
 
-- Make a quick investigation by verifying image authenticity and valuable information 
+- Scrape website metadata and extract named entities using spaCy NLP.
+
+- Validate and investigate phone numbers with carrier and type information.
+
+- Conduct reverse image searches using popular engines.
+
+- Access powerful geospatial intelligence with Google Satellite & OpenStreetMap.
 
 
 # Prerequisites
@@ -65,13 +69,16 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 # Update system packages:
 
-> sudo apt update
+
+    sudo apt update
+
 
 # Create and activate a Python virtual environment:
 
-> virtual my_temp_venv
 
-> source my_temp_venv/bin/activate
+    virtual my_temp_venv
+
+    source my_temp_venv/bin/activate
 
 
 
@@ -79,8 +86,9 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 **You can install all dependencies at once**:
 
-> pip install requests beautifulsoup4 waybackpy spacy phonenumbers exifread tldextract python-whois dnspython
-python -m spacy download en_core_web_sm
+
+    pip install requests beautifulsoup4 waybackpy spacy phonenumbers exifread tldextract python-whois dnspython
+    python -m spacy download en_core_web_sm
 
 
 
@@ -88,7 +96,7 @@ python -m spacy download en_core_web_sm
 
 **Open Nano**
 
-> nano master_osint.py
+    nano master_osint.py
 
 Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c and paste it into the nano editor, save by pressing **(Ctrl+O), and exit (Ctrl+X)**.
 
@@ -114,16 +122,26 @@ For the **Website Metadata and Entity Scraper**, create a file named **urls.txt*
 
 **Run the tool**:
 
-> python3 master_osint.py
+    python master_osint.py
 
 
-- You will see a colorized logo and a menu with multiple investigative modules numbered 1 through 13.
+You will see a menu with 14 OSINT modules plus an exit option. Enter the number of the module you want to run and follow the prompts.
 
-- Select a module by entering its associated number when prompted.
-  
-- Follow any on-screen instructions to input required data (e.g., **image path, username, email address, domain, phone number**, etc).
+For example:
 
+    Enter a username to generate social media profile URLs.
 
+    Enter an email to check breaches or verify validity.
+
+    Enter domain names for WHOIS and DNS lookups.
+
+    Provide image file paths for EXIF geolocation.
+
+    Enter IP addresses for geolocation and blacklist checking.
+
+    Use urls.txt file (one URL per line) in the folder for website metadata scraping.
+
+Results will print in the console or save to files depending on the module (e.g., metadata_output.json for website scraping).
 
 
 # Module Descriptions
@@ -152,27 +170,28 @@ For the **Website Metadata and Entity Scraper**, create a file named **urls.txt*
 11. **Phone Number Investigation**: Validate phone numbers and generate OSINT search dorks.
     
 12. **Reverse Image Search**: Query multiple reverse image search engines for investigation.
+   
+13. **Geospatial Intelligence**: View any location coordinates or place using Google Satellite Maps and OpenStreetMap.
 
-13. **Exit**: Safely exit the toolkit.
+14. **Exit**: Safely exit the toolkit.
 
 
 
 # API Keys Setup
 
-**Several modules require API keys for full functionality. Replace placeholder keys in the script**:
 
+**Some modules require API keys for full functionality**:
 
-- **HaveIBeenPwned API** (for Email breach checks
+    HaveIBeenPwned API key: needed for email breach checks.
+    Sign up at https://haveibeenpwned.com/API/Key and set your key in the script.
 
-- Register at HaveIBeenPwned API and replace YOUR_API_KEY placeholder correctly where is required in the script: https://haveibeenpwned.com/api/v3
+    Hunter.io API key: needed for email verification.
+    Register at https://hunter.io and update the key in the script.
 
-- **Your HUNTER_IO API KEY** - for Hunter.io email verification.
+    AbuseIPDB API key: for IP blacklist checks.
+    Register at https://www.abuseipdb.com/api and update accordingly.
 
-- Sign up to create a free account at Hunter.io and replace your API KEY placeholder correctly where required in the script: https://hunter.io/
-
-- **AbuseIPDB API** (for IP blacklist checks)
-  
-Register at AbuseIPDB and replace the API key placeholder correctly where needed in the script: https://www.abuseipdb.com 
+Update the placeholder API key variables in master_osint.py with your keys to unlock full features.
 
 
 **Security Note**: Never hardcode API keys in public repositories. Use environment variables or config files instead.
@@ -191,13 +210,15 @@ Contact & Support
 
 **Contributing**:
 
-Feel free to submit issues, and create pull requests to improve or extend this toolkit.
+Contributions, suggestions, and bug reports are welcome! Please open an issue or submit a pull request.
 
-**For support, feedback, or contributions, you can connect with me via**:
+**Contact**:
 
-Email: preciousvincentct@gmail.com
+Follow me on LinkedIn for updates and future releases.
 
-LinkedIn: http://linkedin.com/in/tech-enthusiast-669279263
+**LinkedIn**: http://linkedin.com/in/tech-enthusiast-669279263
+
+**Email**: preciousvincentct@gmail.com
 
 
 # MASTER OSINT v2
