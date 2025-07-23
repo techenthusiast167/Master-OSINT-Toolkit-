@@ -2,6 +2,8 @@ MASTER OSINT - Beginner Friendly Open Source Intelligence Toolkit
 
 Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for open source intelligence investigations. The tool supports multiple investigative methods including image geolocation, social media profiling, email breach checks, domain lookup, metadata extraction, Google dorking, Wayback Machine querying, IP geolocation with blacklist checks, reverse image search, and phone number validation.
 
+
+
 # Table of Contents
 
 - Features
@@ -19,6 +21,7 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 - Ethical Considerations
 
 - Contact & Support
+
 
 
 # Features
@@ -70,12 +73,16 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
 > source my_temp_venv/bin/activate
 
+
+
 # Install the required Python packages:
 
 **You can install all dependencies at once**:
 
-> pip install requests exifread waybackpy beautifulsoup4 tldextract python-whois spacy phonenumbers
+> pip install requests beautifulsoup4 waybackpy spacy phonenumbers exifread tldextract python-whois dnspython
 python -m spacy download en_core_web_sm
+
+
 
 # Save the toolkit script:
 
@@ -85,9 +92,8 @@ python -m spacy download en_core_web_sm
 
 Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c and paste it into the nano editor, save by pressing **(Ctrl+O), and exit (Ctrl+X)**.
 
-**Verify with**:
 
-> ls
+
 
 **Tips**:
 
@@ -98,57 +104,78 @@ Always activate your virtual environment before installing libraries.
 Fix missing modules using pip install [package_name] as needed.
 Usage
 
-# Run the tool with:
+
+
+# Running the tool:
+
+**Note: Before ruining the tool, prepare input files**:
+
+For the **Website Metadata and Entity Scraper**, create a file named **urls.txt** in the same directory, containing one **URL per line**. This will facilitate automating the extraction of results using the **Number Ten module**.
+
+**Run the tool**:
 
 > python3 master_osint.py
 
-You will see a colorized logo and a menu with multiple investigative modules numbered 1 through 11.
 
-Enter the number of the module you want to perform, and follow the prompts for inputs.
+- You will see a colorized logo and a menu with multiple investigative modules numbered 1 through 13.
 
-The tool may display results directly or open relevant web pages for further exploration.
+- Select a module by entering its associated number when prompted.
+  
+- Follow any on-screen instructions to input required data (e.g., image path, username, email address, domain, phone number, etc).
 
-Select option 12 at any time to exit gracefully.
+
+
 
 # Module Descriptions
 
-1. Image Geolocation: Extract GPS coordinates from image EXIF metadata
 
-2. Social Media Investigation: Generate social media profile URLs from a given username
+1. **Image Geolocation**: Extract GPS data from image EXIF or perform manual location guidance.
 
-3. Email Analysis: Check if email has been breached (HaveIBeenPwned API) and Pastebin search
+2. **Social Media Investigation**: Generate profile URLs on 30+ popular platforms by username.
+   
+3. **Email Analysis**: Detect breach status and search public pastes and Google for emails.
+   
+4. **Email Lookup & Verification**: Verify email data via Hunter.io and other services.
+   
+5. **Domain Investigation**: Retrieve WHOIS info, DNS records, and subdomain enumeration.
+   
+6. **Metadata Extraction**: Extract EXIF metadata and file system info from files.
+   
+7. **Google Dorking**: Perform advanced Google searches using powerful operators.
+   
+8. **Wayback Machine Lookup**: Access archived webpage snapshots.
+   
+9. **IP Geolocation & Blacklist Checking**: Locate IP geolocation and check abuse blacklists.
+    
+10. **Website Metadata & Entity Scraper**: Scrape website metadata and extract named entities using NLP.
+    
+11. **Phone Number Investigation**: Validate phone numbers and generate OSINT search dorks.
+    
+12. **Reverse Image Search**: Query multiple reverse image search engines for investigation.
 
-4. Domain Investigation: Perform WHOIS lookup and display domain age
+13. **Exit**: Safely exit the toolkit.
 
-5. Metadata Extraction: Extract metadata from documents or images
-
-6. Google Dorking: Input custom Google dorks for sensitive info discovery
-
-7. Wayback Machine Lookup: Fetch historical snapshots of URLs from Internet Archive
-
-8. IP Geolocation & Blacklist: Geolocate IP addresses and check AbuseIPDB blacklist status
-
-9. Website Metadata & Scraper: Extract meta tags, emails, names, and locations from websites
-
-10. Phone Number Investigation: Validate phone number, retrieve country/carrier/type info, and search OSINT dorks
-
-11. Reverse Image Search: Make a quick investigation of an image authenticity 
-
-13. Exit the tool
 
 
 # API Keys Setup
 
-**Some modules require API keys**:
+**Several modules require API keys for full functionality. Replace placeholder keys in the script**:
 
-HaveIBeenPwned API (for Email breach checks: https://haveibeenpwned.com/api/v3 
 
-Register at HaveIBeenPwned API and replace YOUR_API_KEY placeholder rightly where is required in the script.
+- **HaveIBeenPwned API** (for Email breach checks
 
-AbuseIPDB API (for IP blacklist checks)
-Register at AbuseIPDB and replace the API key placeholder rightly where needed in the script: https://www.abuseipdb.com 
+- Register at HaveIBeenPwned API and replace YOUR_API_KEY placeholder correctly where is required in the script: https://haveibeenpwned.com/api/v3
 
-Security Note: Never hardcode API keys in public repositories. Use environment variables or config files instead.
+- **Your HUNTER_IO API KEY** - for Hunter.io email verification.
+
+- Sign up to create a free account at Hunter.io and replace your API KEY placeholder correctly where required in the script: https://hunter.io/
+
+- **AbuseIPDB API** (for IP blacklist checks)
+  
+Register at AbuseIPDB and replace the API key placeholder correctly where needed in the script: https://www.abuseipdb.com 
+
+
+**Security Note**: Never hardcode API keys in public repositories. Use environment variables or config files instead.
 
 
 # Ethical Considerations
@@ -162,7 +189,11 @@ Comply with the terms of service of all websites and APIs involved.
 Contact & Support
 
 
-**For support, feedback, or contributions, connect with the creator**:
+**Contributing**:
+
+Feel free to submit issues, and create pull requests to improve or extend this toolkit.
+
+**For support, feedback, or contributions, you can connect with me via**:
 
 Email: preciousvincentct@gmail.com
 
