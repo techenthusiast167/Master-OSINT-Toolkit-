@@ -198,3 +198,8 @@ Feel free to submit issues, and create pull requests to improve or extend this t
 Email: preciousvincentct@gmail.com
 
 LinkedIn: http://linkedin.com/in/tech-enthusiast-669279263
+
+
+# MASTER OSINT v2
+
+A breakdown of the newly built version: https://x.com/ctprecious/status/1947949365957685464?s=46
