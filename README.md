@@ -83,7 +83,7 @@ python -m spacy download en_core_web_sm
 
 > nano master_osint.py
 
-Copy the tool script via the link https://gist.github.com/techenthusiast167/8e37f06df91c07bd5bb774831ab53e75 and paste it into the nano editor, save by pressing **(Ctrl+O), and exit (Ctrl+X)**.
+Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c and paste it into the nano editor, save by pressing **(Ctrl+O), and exit (Ctrl+X)**.
 
 **Verify with**:
 
