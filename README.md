@@ -98,7 +98,7 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
     nano master_osint.py
 
-Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c and paste it into the nano editor, save by pressing **(Ctrl+O), and exit (Ctrl+X)**.
+Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c and paste it into the nano editor, save it as **master_osint.py** by pressing **(Ctrl+O), Enter, and (Ctrl+X) to exit**.
 
 
 
