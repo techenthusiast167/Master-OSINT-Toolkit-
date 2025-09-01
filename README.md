@@ -1,4 +1,4 @@
-MASTER OSINT - An Advanced Beginner Friendly Open Source Intelligence Toolkit
+## MASTER OSINT - An Advanced Open Source Intelligence Toolkit
 
 Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for open source intelligence investigations. The tool supports multiple investigative methods including image geolocation, social media profiling, email breach and verification checkup, domain lookup, metadata extraction, Google dorking, Wayback Machine querying, IP geolocation with blacklist checks, reverse image search, geospatial Intelligence and phone number validation.
 
@@ -98,9 +98,17 @@ Master OSINT is a comprehensive, beginner-friendly Python toolkit designed for o
 
     nano master_osint.py
 
-Copy the tool script via the link https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c ( **Master OSINT v2** ) and paste it into the nano editor, save it as **master_osint.py** by pressing **(Ctrl+O), Enter, and (Ctrl+X) to exit**.
+- **Copy the tool script via the link**:
 
-**Master OSINT v3** is now out. You can get it via the link https://gist.github.com/techenthusiast167/5fb49b007d48cf2717bc3c12958e47b5. Same installation as version2.
+**https://gist.github.com/techenthusiast167/a95ce477eac6eb1b0db9f22b3a55ca2c** 
+
+**Master OSINT v2** and paste it into the nano editor, save it as **master_osint.py** by pressing **Ctrl+O, Enter, and Ctrl+X to exit**
+
+**Master OSINT v3** is now out. You can get it via the link below:
+
+**https://gist.github.com/techenthusiast167/5fb49b007d48cf2717bc3c12958e47b5**
+
+- **Same installation as version2**
 
 
 **Tips**:
@@ -118,7 +126,7 @@ Usage
 
 **Note: Before ruining the tool, prepare input files**:
 
-For the **Website Metadata and Entity Scraper**, create a file named **urls.txt** in the same directory, containing one **URL per line**. This will facilitate automating the extraction of results using the **Number Ten module**.
+For the **Website Metadata and Entity Scraper**, create a file named **urls.txt** in the same directory, containing one **URL per line**. This will facilitate automating the extraction of results using the **number 10 module**.
 
 **Run the tool**:
 
@@ -222,6 +230,12 @@ Follow me on LinkedIn for updates and future releases.
 **Email**: preciousvincentct@gmail.com
 
 
-# MASTER OSINT v2
+- - - 
+- - - 
 
-A breakdown of the newly built version: https://x.com/ctprecious/status/1947949365957685464?s=46
+# MASTER OSINT advance V4, V5, V6 with new modules are out. 
+
+**kindly check them out via the link below**: 
+
+**https://github.com/techenthusiast167/MASTER-OSINTv4-/blob/main/README.md**
+
