@@ -198,13 +198,12 @@ You will see a menu with 14 OSINT modules plus an exit option. Enter the number 
 
 - **AbuseIPDB API key**: for IP blacklist checks.
 - Register at https://www.abuseipdb.com/api and update accordingly.
-- 
+
 
 Update the placeholder API key variables in master_osint.py with your keys to unlock full features.
 
 
 **Security Note**: Never hardcode API keys in public repositories. Use environment variables or config files instead.
-
 
 # Ethical Considerations
 
